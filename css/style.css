@@ -7,21 +7,7 @@
 html {
   font-size: 62.5%;
 }
-#youtube{
-	width: 75%;
-	height: 500px;
-	margin: 0 auto;
-	padding : 0px 15px;
-}
-#youtube #linkyoutube{
-	width: 100%;
-	height:  100%;
-	margin : 0 auto;
-}
-#linkyoutube iframe{
-	width: 100%;
-	height: 100%;
-}
+
 body {
   font-size: 1.6rem;
   font-family: 'Poppins', sans-serif;
@@ -774,4 +760,16 @@ button {
 .no-js .cd-project-info .content-wrapper {
   margin-top: 0;
 }
-
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 40%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
