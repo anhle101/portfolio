@@ -551,7 +551,7 @@ button {
 }
 .cd-project-info .content-wrapperss > * {
   width: 75%;
-
+max-width: 800px;
 	height: auto;
   margin: 0 auto;
   color: #253031;
