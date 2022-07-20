@@ -276,9 +276,31 @@ $(function () {
 	});
 
 	/*
-		Gallery popup
+		3D popup
 	*/
-	$('.has-popup-gallery').on('click', function() {
+	$('.has-popup-3D').on('click', function() {
+        var gallery = $(this).attr('href');
+    
+        $(gallery).magnificPopup({
+            delegate: 'a',
+            type:'image',
+            closeOnContentClick: false,
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            fixedContentPos: false,
+            gallery: {
+                enabled: true
+            }
+        }).magnificPopup('open');
+
+        return false;
+    });
+	
+	
+	/*
+		2D popup
+	*/
+	$('.has-popup-2D').on('click', function() {
         var gallery = $(this).attr('href');
     
         $(gallery).magnificPopup({
